@@ -2,9 +2,11 @@
 ### Simple Spring project with multi modules
 This is sample project created based on https://spring.io/guides/gs/multi-module/  
 There are 2 modules.  
-1. Library  - which has a class to find the type of strings in a given list (OOTB it provides 2 types, Empty & Text)
+1. Library  - which has a class (StringTypeFinder.java) to find the type of strings in a given list (OOTB it provides 2 types, Empty & Text both are implementing IType interface)
 2. Application - which has a webservice that invokes the method in StringTypeFinder with a list of strings.   
 Also note that application module has a class PalindromeType which implements IType to detect a Palindrome string
+
+The expected behavior is that the result should consider all the implementations of IType.
 
 ### How to bootstrap
 
