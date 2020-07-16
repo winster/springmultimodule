@@ -6,7 +6,7 @@ There are 2 modules.
 2. Application - which has a webservice that invokes the method in StringTypeFinder with a list of strings.   
 Also note that application module has a class PalindromeType which implements IType to detect a Palindrome string
 
-The expected behavior is that the result should consider all the implementations of IType.
+The expected behavior is that the result should consider all the implementations of IType in a given order
 
 ### How to bootstrap
 
@@ -37,4 +37,4 @@ There are 2 ways. See SampleApplication.java for reference
 
 ### Problems to explore
 
-1. How to set the order of this IType implementations, without an order, the type detection might not return the most accurate type
+1. How to achieve this capability without spring
